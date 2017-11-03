@@ -14,7 +14,6 @@ public class Iterator {
         while (iterator.hasNext()){
             String str = (String) iterator.next();
             if(str.equals("A")){
-                //throw java.util.ConcurrentModificationException
                 iterator.remove();
             }
             System.out.println(str);
